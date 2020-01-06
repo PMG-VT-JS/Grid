@@ -80,7 +80,7 @@ class RaceTower {
     * @param {int} trackLength - дължина на пистата
     * @return {void}
     */
-    SetTrackInfo(int lapsNumber, int trackLength)
+    setTrackInfo(lapsNumber, trackLength)
     {
         // @TODO: Add some logic here …
     }
@@ -98,7 +98,7 @@ class RaceTower {
     * @param {string} [commandArgs[6]] grip - само ако tyreType е "Ultrasoft"
     * @return {void}
     */
-    RegisterDriver(commandArgs)
+    registerDriver(commandArgs)
     {
         // @TODO: Add some logic here …
     }
@@ -114,7 +114,7 @@ class RaceTower {
     * @param {string} [commandArgs[4]] grip - ако reasonToBox === "ChangeTyres" && tyreType === "Ultrasoft"
     * @return {void}
     */
-    DriverBoxes(commandArgs)
+    driverBoxes(commandArgs)
     {
         // @TODO: Add some logic here …
     }
@@ -126,7 +126,7 @@ class RaceTower {
     * @param {string} commandArgs[0] numberOfLaps
     * @return {string}
     */ 
-    CompleteLaps(commandArgs)
+    completeLaps(commandArgs)
     {
         // @TODO: Add some logic here …
     }
@@ -135,7 +135,7 @@ class RaceTower {
     * 
     * @return {string[]}
     */
-    GetLeaderboard()
+    getLeaderboard()
     {
         // @TODO: Add some logic here …
     }
@@ -147,13 +147,13 @@ class RaceTower {
 
 * `RegisterDriver type name hp fuelAmount tyreType tyreHardness [grip]`
   
-    Извиква метода `RaceTower.RegisterDriver()`
+    Извиква метода `RaceTower.registerDriver()`
 
     > *Входните данни може да не са валидни. Ако не можете да създадете състезател с данните, просто го пропуснете.*
 
 * `Leaderboard`
 
-    Извиква метода `RaceTower.GetLeaderboard()`
+    Извиква метода `RaceTower.getLeaderboard()`
 
     На първия ред принтирайте:
     ```
@@ -167,7 +167,7 @@ class RaceTower {
 
 * `CompleteLaps numberOfLaps`
 
-    Извиква метода `RaceTower.CompleteLaps()`
+    Извиква метода `RaceTower.completeLaps()`
 
     На всяка обиколка `TotalTime` на всеки водач трябва да се увеличи с резултата от следната формула:
     ```
@@ -182,11 +182,15 @@ class RaceTower {
 
     1. Деградирайте гумата според вида й.
 
-    Ако имате по-голям брой обиколки от броя на обиколките, останали в състезанието, трябва да изхвърлите изключение с подходящото съобщение и да не увеличавате броя завършени обиколки.
+    Ако имате по-голям брой обиколки от броя на обиколките, останали в състезанието, трябва да върнете съобщение
+    ```
+    There is no time! On lap {current lap}.
+    ```
+    и да не увеличавате броя завършени обиколки.
 
 * `Box reasonToBox driversName (tyreType | fuelAmount) [tyreHardness [grip]]`
 
-    Извиква метода `RaceTower.DriverBoxes()`
+    Извиква метода `RaceTower.driverBoxes()`
 
     Добавя 20 секунди към неговото време. При посещение на бокса състезателят може да смени гумите си с нови или да зареди с гориво.
 
