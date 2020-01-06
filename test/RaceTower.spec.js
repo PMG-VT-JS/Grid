@@ -3,7 +3,7 @@ const { expect } = require('./setup');
 const { RaceTower } = require('../index');
 
 describe('RaceTower', () => {
-    it('SetTrackInfo', () => {
+    it('setTrackInfo', () => {
         const raceTower = new RaceTower();
         
         raceTower.setTrackInfo(10, 2);
