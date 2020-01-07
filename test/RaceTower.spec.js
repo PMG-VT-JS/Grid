@@ -24,6 +24,7 @@ describe('RaceTower', () => {
             totalTime: 100, car: {},
             failureReason: null,
             speed: sinon.fake(),
+            currentAchievement: sinon.fake(),
         };
         anotherDriver = {
             name: 'AnotherDriver',
@@ -31,6 +32,7 @@ describe('RaceTower', () => {
             car: { increaseFuel: sinon.fake() },
             failureReason: null,
             speed: sinon.fake(),
+            currentAchievement: sinon.fake(),
         };
         raceTower.drivers = [anotherDriver, theDriver];
         raceTower.setTrackInfo(10, 1);
