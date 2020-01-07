@@ -91,7 +91,7 @@ describe('RaceTower', () => {
             expect(result).to.be.equal('There is no time! On lap 0.')
         });
 
-        it('returns winner text on race completion', () => {
+        it('returns string on race completion', () => {
             const result = raceTower.completeLaps(['10']);
             expect(typeof result).to.be.equal('string');
         });

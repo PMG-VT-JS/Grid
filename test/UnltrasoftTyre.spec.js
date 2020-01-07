@@ -2,7 +2,7 @@ const UltrasoftTyre = require('../lib/UltrasoftTyre');
 const { expect } = require('./setup');
 const { TyreBlownError } = require('../lib/Exceptions');
 
-describe('Tyre', () => {
+describe('UltrasoftTyre', () => {
     /** @type {UltrasoftTyre} */
     let tyre;
 
