@@ -21,7 +21,7 @@
   "homepage": "https://github.com/PMG-VT-JS/Grid#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.0.0",
+    "mocha": "^10.2.0",
     "nyc": "^15.0.0",
     "sinon": "^8.0.2",
     "sinon-chai": "^3.4.0"
